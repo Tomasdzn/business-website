@@ -1,0 +1,33 @@
+.menu-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 80%;
+}
+
+.menu-container a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  transition: ease-in-out 0.2s;
+  margin-right: 50px;
+  height: 20px;
+  font-weight: 600;
+}
+
+.menu-container a:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.menu-container a:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 700px) {
+  .menu-container a{
+    font-size: 10px;
+    margin-right: 10px;
+  }
+}

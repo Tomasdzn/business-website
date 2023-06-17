@@ -1,0 +1,47 @@
+.body-container {
+  width: 65%;
+  margin: auto;
+  height: fit-content;
+  margin-top: 110px;
+}
+
+.title-container {
+  width: 70%;
+  height: 140px;
+  margin: auto;
+  text-align: center;
+}
+
+.pretitle {
+  color: rgba(0, 0, 0, 0.616);
+  font-size: 13px;
+}
+
+.divider {
+  width: 100%;
+  height: 150px;
+  background: url('../../images/divider.png');
+  opacity: 0.2;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 1000px) {
+  .title {
+    font-size: 25px;
+    
+  }
+  .title-container {
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .divider {
+    height: 100px;
+  }
+  .body-container {
+    margin-top: 20px;
+  }
+}

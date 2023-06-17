@@ -1,0 +1,17 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 15%;
+  margin-left: 10px;
+}
+
+img {
+  height: 50px;
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+img:hover {
+  opacity: 0.8;
+}

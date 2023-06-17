@@ -1,0 +1,33 @@
+.about-container {
+  width: 65%;
+  margin: auto;
+  height: fit-content;
+  margin-top: 110px;
+}
+
+.about-text-container {
+  text-align: center;
+}
+
+.about-text-container p {
+  color: rgba(0, 0, 0, 0.616);
+  font-size: 13px;
+}
+
+.about-text-container h1 {
+  margin: 0;
+}
+
+.article-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+@media (max-width: 1000px) {
+  .article-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+}

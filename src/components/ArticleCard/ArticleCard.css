@@ -1,0 +1,23 @@
+.card-container {
+  padding: 10px;
+  padding-right: 50px;
+}
+
+.date, .desc {
+  color: rgba(0, 0, 0, 0.616);
+}
+
+.desc {
+  font-size: 16px;
+  line-height: 2;
+}
+
+.date {
+  font-size: 12px;
+}
+
+@media (max-width: 1000px) { 
+  .card-container {
+    padding-right: 0;
+  }
+}
