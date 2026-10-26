@@ -1,9 +1,8 @@
-body {
-  margin: 0;
-  background-color: rgb(255, 255, 255);
+.main-container {
+  min-height: 100vh;
 }
 
 .intro-header-container {
-  width: 98%;
-  margin: auto;
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto 48px;
 }

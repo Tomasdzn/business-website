@@ -5,7 +5,7 @@ import './PreFooter.css'
 
 const PreFooter = () => {
   return (
-    <div className='prefooter-container'>
+    <div className='prefooter-container' id='contact'>
       <div className='prefooter-text-container'>
         <h1>Grow your business.</h1>
         <p>Today is the day to build the business of your dreams. 

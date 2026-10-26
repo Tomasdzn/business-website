@@ -1,48 +1,115 @@
-* {
-  font-family: 'Montserrat', sans-serif;
-}
-
 .banner-container {
-  height: 700px;
+  margin-top: 22px;
 }
 
-.banner{
-  background-image: url('../../images/banner-bg.svg');
-  height: 700px;
-  width: 90%;
-  margin: auto;
+.banner {
+  position: relative;
+  overflow: hidden;
+  min-height: 620px;
+  border-radius: 36px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255, 176, 32, 0.55), transparent 28%),
+    radial-gradient(circle at 85% 15%, rgba(74, 163, 255, 0.55), transparent 30%),
+    radial-gradient(circle at 75% 80%, rgba(18, 200, 178, 0.5), transparent 32%),
+    linear-gradient(145deg, #241447 0%, #3a1d78 42%, #ff5a7a 140%);
+  box-shadow: 0 30px 80px rgba(58, 29, 120, 0.28);
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(2px);
+  opacity: 0.55;
+  animation: float 9s ease-in-out infinite;
+}
+
+.blob-a {
+  width: 220px;
+  height: 220px;
+  background: #ffb020;
+  top: -30px;
+  left: -20px;
+}
+
+.blob-b {
+  width: 260px;
+  height: 260px;
+  background: #12c8b2;
+  right: -30px;
+  bottom: -40px;
+  animation-delay: -3s;
+}
+
+.blob-c {
+  width: 140px;
+  height: 140px;
+  background: #ff5a7a;
+  right: 8%;
+  top: 8%;
+  animation-delay: -5s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-18px); }
 }
 
 .banner-content {
-  margin: auto;
+  position: relative;
+  z-index: 1;
+  width: min(760px, 90%);
+  padding: 28px 12px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: radial-gradient(ellipse at center, rgba(24, 12, 58, 0.42), transparent 72%);
 }
 
-span {
+.eyebrow {
+  margin: 0 0 18px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  color: #fff4d6;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.banner-content h1 {
+  margin: 0;
   color: white;
-  font-size: 64px;
+  font-size: clamp(42px, 7vw, 84px);
+  line-height: 0.95;
 }
 
 .banner-desc {
-  color: rgba(255, 255, 255, 0.534);
+  max-width: 520px;
+  color: rgba(255, 255, 255, 0.86);
   font-size: 20px;
+  line-height: 1.5;
 }
 
-@media (max-width: 1000px) {
-  span {
-    font-size: 34px;
-  }
-  .banner-desc {
-    font-size: 15px;
-    text-align: center;
-  }
-  .banner-content {
-    width: 90%;
+.banner-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .banner {
+    min-height: 520px;
+    border-radius: 24px;
   }
 
+  .banner-desc {
+    font-size: 16px;
+  }
 }

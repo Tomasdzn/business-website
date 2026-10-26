@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Navbar from './Navbar/Navbar';
 import Banner from './Banner/Banner';
 import Body from './Body/Body';

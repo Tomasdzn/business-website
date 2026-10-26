@@ -10,7 +10,9 @@ const Navbar = () => {
     <nav>
       <Logo />
       <Menu />
-      <Button isContact={true} text='CONTACT US'/>
+      <div className='nav-cta'>
+        <Button isContact={true} text='CONTACT US'/>
+      </div>
     </nav>
   )
 }

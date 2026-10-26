@@ -6,7 +6,7 @@ import './Logo.css'
 const Logo = () => {
   return (
     <div className='logo'>
-      <img src={Logox} alt="logox" />
+      <span className='logo-word'>Northstar</span>
     </div>
   )
 }

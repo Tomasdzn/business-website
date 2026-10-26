@@ -1,38 +1,45 @@
-.contact-container {
+.contact-container,
+.learn-container {
   display: flex;
   align-items: center;
-  flex-basis: 15%;
+}
+
+button {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
 }
 
 .contact-button {
-  width: 145px;
-  height: 50px;
   border: none;
-  background-color: #1a1b1f;
-  padding: 10px 20px;
-  font-family: 'Montserrat', sans-serif;
+  min-width: 148px;
+  height: 48px;
+  padding: 10px 22px;
   color: white;
-  cursor: pointer;
-  transition: ease-in-out 0.3s;
-  margin-right: 10px;
+  background: linear-gradient(120deg, var(--coral), var(--violet) 70%);
+  box-shadow: 0 12px 24px rgba(122, 92, 255, 0.32);
 }
 
 .contact-button:hover {
-  background-color: #1a1b1fe7;
+  box-shadow: 0 16px 28px rgba(255, 90, 122, 0.35);
 }
 
 .learn-button {
-  height: 50px;
-  border: none;
-  background-color: white;
-  padding: 10px 35px;
-  font-family: 'Montserrat', sans-serif;
-  color: black;
-  cursor: pointer;
-  transition: ease-in-out 0.2s;
+  height: 48px;
+  padding: 10px 26px;
+  color: white;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1.5px solid rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
 }
 
 .learn-button:hover {
-  background-color: #f4f4f475;
-  border: 1px solid #f4f4f49d;
+  background: rgba(255, 255, 255, 0.22);
 }

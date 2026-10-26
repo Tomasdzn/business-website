@@ -1,8 +1,6 @@
 .about-container {
-  width: 65%;
-  margin: auto;
-  height: fit-content;
-  margin-top: 110px;
+  width: min(1040px, 100%);
+  margin: 110px auto 0;
 }
 
 .about-text-container {
@@ -10,24 +8,27 @@
 }
 
 .about-text-container p {
-  color: rgba(0, 0, 0, 0.616);
+  margin: 0;
+  color: var(--teal);
   font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
 }
 
 .about-text-container h1 {
-  margin: 0;
+  margin: 8px 0 0;
+  font-size: clamp(32px, 4vw, 48px);
 }
 
 .article-container {
-  display: flex;
-  flex-direction: row;
-  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 36px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .article-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
+    grid-template-columns: 1fr;
   }
 }
